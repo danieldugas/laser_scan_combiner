@@ -1,8 +1,10 @@
 ## laser_scan_combiner
 
-A ROS Package to two 2D LiDAR scan into one.
+A ROS Package to combine two 2D LiDAR scan into one.
 
 This was created in order to use more than a single scanner in gmapping.
+
+### Input and output topics
 
 Input:
 /scan1: topic for the LaserScan messages published by the first laser.
@@ -11,6 +13,7 @@ Input:
 Output:
 /combined_scan: A single LaserScan topic, in the frame of the first laser.
 
+### Notes
 
 Scans are not accumulated.
 They are not truly combined in that sense.
